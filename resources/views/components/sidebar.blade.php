@@ -41,7 +41,7 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">
+                    <a href="{{ route('lifecycle') }}" class="nav-link">
                         <p>
                             Life Cycle Hook
                         </p>

@@ -11,7 +11,7 @@
                 </div>
                 <div class="col-sm-6">
                     <ol class="breadcrumb float-sm-right">
-                        <li class="breadcrumb-item"><a href="/home">Home</a></li>
+                        <li class="breadcrumb-item"><a href="{{ route('home') }}">Home</a></li>
                         <li class="breadcrumb-item">Dashboard</li>
                     </ol>
                 </div>
@@ -30,7 +30,7 @@
                     <li class="list-group-item"><a href="{{ route('route', 'SkyGod') }}">2. Route</a></li>
                     <li class="list-group-item"><a href="{{ route('propertybinding') }}">3. Property Binding</a></li>
                     <li class="list-group-item"><a href="{{ route('action') }}">4. Action</a></li>
-                    <li class="list-group-item"><a href="#">5. Life Cycle Hook</a></li>
+                    <li class="list-group-item"><a href="{{ route('lifecycle') }}">5. Life Cycle Hook</a></li>
                     <li class="list-group-item"><a href="#">6. Form Validation</a></li>
                     <li class="list-group-item"><a href="#">7. CRUD</a></li>
                 </ul>
