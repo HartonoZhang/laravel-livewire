@@ -21,7 +21,6 @@
 
     <section class="content">
         <div class="container-fluid">
-            Action
             <h5>1. Call sum function default with parameter 7 and 6 <button type="submit" class="btn btn-primary"
                     wire:click="sumNumber(7,6)">Sum</button></h5>
             <h5>Result : {{ $sum_default }}</h5>

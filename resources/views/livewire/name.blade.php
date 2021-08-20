@@ -21,8 +21,8 @@
     
     <section class="content">
         <div class="container-fluid">
-            <h4>1. This is route component with paramter (Route/SkyGod)</h4>
-            <h4>2. Example url parameter SkyGod to HartonoZhang (<a href="{{ route('route', 'HartonoZhang') }}">Click here</a>)</h4>
+            <h5>1. This is route component with paramter (Route/SkyGod)</h5>
+            <h5>2. Example url parameter SkyGod to HartonoZhang (<a href="{{ route('route', 'HartonoZhang') }}">Click here</a>)</h5>
             <div class="card m-3 p-3">
                 <h5>Name : {{ $name }}</h5>
                 <h5>Hello {{ $name }}</h5>
