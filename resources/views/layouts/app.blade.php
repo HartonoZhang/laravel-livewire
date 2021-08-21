@@ -13,20 +13,18 @@
 
 <body class="hold-transition sidebar-mini layout-fixed">
     <div class="wrapper">
-        <!-- Navbar -->
         @include('components.navigation')
         <!-- Main Sidebar Container -->
         @include('components.sidebar')
-        <!-- Content Wrapper. Contains page content -->
+
         {{ $slot }}
-        <!-- /.content-wrapper -->
+
         @include('components.footer')
-        <!-- Control Sidebar -->
+
         <aside class="control-sidebar control-sidebar-dark">
-            <!-- Control sidebar content goes here -->
         </aside>
     </div>
-    <!-- ./wrapper -->
+
     @include('components.script-link')
     @livewireScripts
 </body>

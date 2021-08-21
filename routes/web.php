@@ -7,6 +7,7 @@ use App\Http\Livewire\Home;
 use App\Http\Livewire\Name;
 use App\Http\Livewire\Post;
 use App\Http\Livewire\Product;
+use App\Http\Livewire\Students;
 use App\Http\Livewire\User;
 use Illuminate\Support\Facades\Route;
 
@@ -50,3 +51,6 @@ Route::get('/lifecycle', Product::class)->name('lifecycle');
 
 //Tutorial Livewire Form Validation
 Route::get('/validation', Contact::class)->name('validation');
+
+//Tutorial Livewire CRUD
+Route::get('/crud', Students::class);
