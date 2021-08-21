@@ -27,6 +27,12 @@
 
     @include('components.script-link')
     @livewireScripts
+
+    <script>
+        window.livewire.on('studentAdded', () => {
+            $('#addStudentModal').modal('hide');
+        })
+    </script>
 </body>
 
 </html>

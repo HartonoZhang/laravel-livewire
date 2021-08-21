@@ -22,7 +22,10 @@
         @include('livewire.create')
         <div class="container-fluid">
             <div class="row">
-                <div class="col-12">
+                <div class="col-md-12">
+                    @if (session()->has('message'))
+                        <div class="alert alert-success">{{ session('message') }}</div>
+                    @endif
                     <div class="card">
                         <div class="card-header">
                             <h4 class="card-title">All Students</h4>
@@ -38,6 +41,7 @@
                                         <th>Last name</th>
                                         <th>Email</th>
                                         <th>Phone</th>
+                                        <th>Action</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -47,6 +51,10 @@
                                            <td>{{ $student->lastname }}</td>
                                            <td>{{ $student->email }}</td>
                                            <td>{{ $student->phone }}</td>
+                                           <td>
+                                               <button class="btn btn-primary">Edit</button>
+                                               <button class="btn btn-danger">Delete</button>
+                                           </td>
                                         </tr>
                                     @endforeach
                                 </tbody>
