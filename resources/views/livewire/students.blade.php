@@ -20,6 +20,7 @@
     </section>
     <section class="content">
         @include('livewire.create')
+        @include('livewire.update')
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-12">
@@ -52,8 +53,8 @@
                                            <td>{{ $student->email }}</td>
                                            <td>{{ $student->phone }}</td>
                                            <td>
-                                               <button class="btn btn-primary">Edit</button>
-                                               <button class="btn btn-danger">Delete</button>
+                                               <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#editStudentModal" wire:click.prevent="edit({{ $student->id }})">Edit</button>
+                                               <button type="button" class="btn btn-danger" wire:click.prevent="delete({{ $student->id }})">Delete</button>
                                            </td>
                                         </tr>
                                     @endforeach

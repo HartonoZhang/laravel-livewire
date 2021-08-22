@@ -53,4 +53,4 @@ Route::get('/lifecycle', Product::class)->name('lifecycle');
 Route::get('/validation', Contact::class)->name('validation');
 
 //Tutorial Livewire CRUD
-Route::get('/crud', Students::class);
+Route::get('/crud', Students::class)->name('crud');

@@ -32,7 +32,7 @@
                     <li class="list-group-item"><a href="{{ route('action') }}">4. Action</a></li>
                     <li class="list-group-item"><a href="{{ route('lifecycle') }}">5. Life Cycle Hook</a></li>
                     <li class="list-group-item"><a href="{{ route('validation') }}">6. Form Validation</a></li>
-                    <li class="list-group-item"><a href="#">7. CRUD</a></li>
+                    <li class="list-group-item"><a href="{{ route('crud') }}">7. CRUD</a></li>
                 </ul>
             </div>
         </div>
